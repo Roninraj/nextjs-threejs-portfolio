@@ -1,2 +1,2 @@
-# nextjs-threejs-portfolio
+# nextjs-portfolio-3d
  
