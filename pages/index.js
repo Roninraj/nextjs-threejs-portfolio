@@ -45,7 +45,7 @@ const Page = () => {
                 <Paragraph>I am a final-year student currently completing my B.Tech in Computer Science and Engineering.
                     Got a knack of using new technologies and try out their effectiveness in solving real-life problems. 
                     Gaming&apos;s got a second blood in me, especially when it&apos;s FPS. The recent work I did on was on Front-end for {''}
-                    <NextLink href="/works/hackaduck2"><Link>Hack-a-Duck 2.0</Link></NextLink>.
+                    <NextLink href="/works/hackaduck2"><Link>Hack-a-Duck 2.0</Link></NextLink>. Currently, in Ranchi.
                     <br/>
                     <Codebox><code>" Never ever lose yourself "</code></Codebox>
                 </Paragraph>
