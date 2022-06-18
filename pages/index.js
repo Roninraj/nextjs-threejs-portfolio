@@ -1,5 +1,4 @@
 import {Box, Button, Container, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react"
-//import Head from "next/head";
 import NextLink from 'next/link'
 import Section from "../components/section";
 import Paragraph from "../components/paragraph"
