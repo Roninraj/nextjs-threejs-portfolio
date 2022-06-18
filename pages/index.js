@@ -1,8 +1,13 @@
-import {Box, Container, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import {Box, Button, Container, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react"
 import Head from "next/head";
+import NextLink from 'next/link'
 import Section from "../components/section";
 import Paragraph from "../components/paragraph"
 import Codebox from "../components/codebox";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import Bio, { BioSection, BioYear } from "../components/bio";
+
+
 const Page = () => {
     return(
         <>
@@ -24,7 +29,7 @@ const Page = () => {
                 align="center">
                     <Image 
                     borderColor="whiteAlpha.800" 
-                    borderWidth={2} 
+                    borderWidth={3} 
                     borderStyle="solid" 
                     maxWidth="100px" 
                     display="inline-block" 
@@ -40,10 +45,41 @@ const Page = () => {
                 </Heading>
                 <Paragraph>I am a final-year student currently completing my B.Tech in Computer Science and Engineering.
                     Got a knack of using new technologies and try out their effectiveness in solving real-life problems. 
-                    Gaming&apos;s got a second blood in me, especially when it&apos;s FPS.
+                    Gaming&apos;s got a second blood in me, especially when it&apos;s FPS. The recent work I did on was on Front-end for {''}
+                    <NextLink href="/works/hackaduck2"><Link>Hack-a-Duck 2.0</Link></NextLink>.
                     <br/>
                     <Codebox><code>" Never ever lose yourself "</code></Codebox>
                 </Paragraph>
+
+                <Box align="center" my={4}>
+                    <NextLink href="works">
+                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal" variant="outline">
+                            My Portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
+
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>2000</BioYear>
+                    Born in Tarkeshwar ( তারকেশ্বর ), India.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2017</BioYear>
+                    High School from St. Anthony's, Ranchi 
+                </BioSection>
+                <BioSection>
+                    <BioYear>2019</BioYear>
+                    Secondary High School from St. Xaviers, Bokaro 
+                </BioSection>
+                <BioSection>
+                    <BioYear>2019 - present</BioYear>
+                    Studying B.Tech in CSE at Birla Institute of Technology, Mesra
+                </BioSection>
             </Section>
         </Container>
         </>
