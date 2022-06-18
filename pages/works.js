@@ -3,14 +3,14 @@ import Section from "../components/section";
 import Link from "next/link";
 import { WorkGridItem } from "../components/grid-item";
 import thumbHackaduck from '../public/images/works/hackaduck2.png'
-import valoMontage from '../public/images/works/valo_montage.jpg'
+//import valoMontage from '../public/images/works/valo_montage.png'
 
 const Works = () =>{
 return(
     <Container>
         <Heading as="h3" fontSize={20} mb={4}>
             Works
-        </Heading>
+        </Heading> 
 
         <SimpleGrid columns={[1,1,2]} gap={6}>
             <Section>
@@ -18,17 +18,15 @@ return(
                     A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
                 </WorkGridItem>
             </Section>
+            <Divider></Divider>
             <Section>
-                <WorkGridItem 
-                    id="samurai_montage"
-                    title="Valo Montage"
-                    thubnail={valoMontage}>
+                <WorkGridItem id="samurai_montage" title="Valo Montage" thubnail={thumbHackaduck}>
                         A montage made from game - Valorant
                 </WorkGridItem>
             </Section>
-            
-        </SimpleGrid>
-        <Box><Divider></Divider></Box>
+            <Box></Box>
+           </SimpleGrid> 
+        
     </Container>
 )
 }
