@@ -1,4 +1,4 @@
-import {Box, Container, Heading, Img, useColorModeValue } from "@chakra-ui/react"
+import {Box, Container, Heading, Image, useColorModeValue } from "@chakra-ui/react"
 
 const Page = () => {
     return(
@@ -19,14 +19,15 @@ const Page = () => {
                 mt={{base:4,md:0}} 
                 ml={{md:6}} 
                 align="center">
-                    <Img 
+                    <Image 
                     borderColor="whiteAlpha.800" 
                     borderWidth={2} 
                     borderStyle="solid" 
                     maxWidth="100px" 
                     display="inline-block" 
                     borderRadius="full" 
-                    src="../public/roninraj.jpg" 
+                    src="/roninraj.jpg"
+                    // fallbackSrc="https://via.placeholder.com/150x150"
                     alt="Profile Image"/>
                 </Box>
             </Box>
