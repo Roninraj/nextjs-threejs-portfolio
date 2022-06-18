@@ -1,5 +1,5 @@
-import { extendTheme, Thead } from "@chakra-ui/react";
-import chakraUiTheme from "@chakra-ui/theme";
+import { extendTheme,} from "@chakra-ui/react";
+//import chakraUiTheme from "@chakra-ui/theme";
 import {mode} from '@chakra-ui/theme-tools';
 
 const styles = {
