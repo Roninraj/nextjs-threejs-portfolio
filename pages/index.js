@@ -1,5 +1,8 @@
 import {Box, Container, Heading, Image, useColorModeValue } from "@chakra-ui/react"
-
+import Head from "next/head";
+import Section from "../components/section";
+import Paragraph from "../components/paragraph"
+import Codebox from "../components/codebox";
 const Page = () => {
     return(
         <>
@@ -31,6 +34,17 @@ const Page = () => {
                     alt="Profile Image"/>
                 </Box>
             </Box>
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Work
+                </Heading>
+                <Paragraph>I am a final-year student currently completing my B.Tech in Computer Science and Engineering.
+                    Got a knack of using new technologies and try out their effectiveness in solving real-life problems. 
+                    Gaming&apos;s got a second blood in me, especially when it&apos;s FPS.
+                    <br/>
+                    <Codebox><code>" Never ever lose yourself "</code></Codebox>
+                </Paragraph>
+            </Section>
         </Container>
         </>
     );
