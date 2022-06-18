@@ -17,15 +17,16 @@ return(
                 <WorkGridItem id="hackaduck2" title="Hack-a-Duck 2.0" thumbnail={thumbHackaduck}>
                     A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
                 </WorkGridItem>
-                <Section>
-                    <WorkGridItem 
-                        id="samurai_montage"
-                        title="Valo Montage"
-                        thubnail={valoMontage}>
-                            A montage made from game - Valorant
-                    </WorkGridItem>
-                </Section>
             </Section>
+            <Section>
+                <WorkGridItem 
+                    id="samurai_montage"
+                    title="Valo Montage"
+                    thubnail={valoMontage}>
+                        A montage made from game - Valorant
+                </WorkGridItem>
+            </Section>
+            
         </SimpleGrid>
         <Box><Divider></Divider></Box>
     </Container>
