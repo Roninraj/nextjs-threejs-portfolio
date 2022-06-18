@@ -1,6 +1,7 @@
 {
     "root": true,
-    "extends": "eslint:recommended",
+    "extends": "eslint:recommended next",
+
     "rules": {
         "react/no-unescaped-entities": "off",
         "@next/next/no-html-link-for-pages" : "off",
