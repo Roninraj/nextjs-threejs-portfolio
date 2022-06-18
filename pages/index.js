@@ -39,7 +39,7 @@ const Page = () => {
                     alt="Profile Image"/>
                 </Box>
             </Box>
-            <Section delay={0.1}>
+            <Section delay={0.2}>
                 <Heading as="h3" variant="section-title">
                     Work
                 </Heading>
@@ -60,7 +60,7 @@ const Page = () => {
                 </Box>
             </Section>
 
-            <Section delay={0.2}>
+            <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
                     Bio
                 </Heading>
@@ -79,6 +79,15 @@ const Page = () => {
                 <BioSection>
                     <BioYear>2019 - present</BioYear>
                     Studying B.Tech in CSE at Birla Institute of Technology, Mesra
+                </BioSection>
+            </Section>
+
+            <Section delay={0.4}>
+            <Heading as="h3" variant="section-title">
+                    Hobbies
+                </Heading>
+                <BioSection>
+                    Basketball, <Link href="https://steamcommunity.com/id/rajsoren">Gaming</Link>, Photography, Music, Art, Travelling
                 </BioSection>
             </Section>
         </Container>
