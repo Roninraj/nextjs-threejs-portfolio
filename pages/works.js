@@ -8,25 +8,45 @@ import thumbHackaduck from '../public/images/works/hackaduck2.png'
 const Works = () =>{
 return(
     <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
-            Works
-        </Heading> 
+        <Box>
+            <Heading as="h3" fontSize={20} mb={4}>
+                Works
+            </Heading> 
 
-        <SimpleGrid columns={[1,1,2]} gap={6}>
-            <Section>
-                <WorkGridItem id="hackaduck2" title="Hack-a-Duck 2.0" thumbnail={thumbHackaduck}>
-                    A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
-                </WorkGridItem>
-            </Section>
-            <Divider></Divider>
-            <Section>
-                <WorkGridItem id="samurai_montage" title="Valo Montage" thubnail={thumbHackaduck}>
-                        A montage made from game - Valorant
-                </WorkGridItem>
-            </Section>
-            <Box></Box>
-           </SimpleGrid> 
-        
+            <SimpleGrid columns={[1,1,2]} gap={6}>
+                <Section delay={0.3}>
+                    <WorkGridItem id="hackaduck2" title="Hack-a-Duck 2.0" thumbnail={thumbHackaduck}>
+                        A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
+                    </WorkGridItem>
+                </Section>
+                <Section delay={0.3}>
+                    <WorkGridItem id="samurai_montage" title="Valo Montage" thubnail={thumbHackaduck}>
+                            A montage made from game - Valorant
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
+        </Box>
+
+        <Divider/>
+
+        <Box>
+            <Heading as="h3" fontSize={20} mb={4}>
+                Collaborations
+            </Heading>
+            <SimpleGrid columns={[1,1,2]} gap={6}>
+                <Section delay={0.3}>
+                    <WorkGridItem id="hackaduck2" title="Hack-a-Duck 2.0" thumbnail={thumbHackaduck}>
+                        A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
+                    </WorkGridItem>
+                </Section>
+                <Section delay={0.3}>
+                    <WorkGridItem id="samurai_montage" title="Valo Montage" thubnail={thumbHackaduck}>
+                            A montage made from game - Valorant
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
+
+        </Box> 
     </Container>
 )
 }
