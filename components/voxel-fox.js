@@ -21,7 +21,7 @@ const VoxelFox = () => {
             20*Math.cos(0.2*Math.PI)
         )
      )
-     const [scene] =useState(new THREE.Scene())
+     const [scene] = useState(new THREE.Scene())
      const [_controls,setControls] = useState()
      
      const handleWindowResize = useCallback(() => {
@@ -32,7 +32,8 @@ const VoxelFox = () => {
 
             renderer.setSize(scW,scH)
         }
-     },[renderer])
+     }, [renderer])
+
      /* eslint-disable react-hooks/exhaustive-deps */
      useEffect(()=> {
         const {current:container}=refContainer
@@ -68,12 +69,12 @@ const VoxelFox = () => {
             const ambientLight =new THREE.AmbientLight(0xcccccc,1)
             scene.add(ambientLight)
             
-            const controls = new OrbitControls(camera,renderer,domElement)
+            const controls = new OrbitControls(camera,renderer.domElement)
             controls.autoRotate = true
             controls.target = target
             setControls(controls)
             
-            loadGLTFModel(scene, '/red_fox.glb',{
+            loadGLTFModel(scene, '/red_fox.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
@@ -96,19 +97,20 @@ const VoxelFox = () => {
                     camera.position.x = p.x* Math.cos(rotSpeed) + p.z*Math.sin(rotSpeed)
                     camera.position.z = p.z*Math.cos(rotSpeed) - p.x*Math.sin(rotSpeed)
                     camera.lookAt(target)
-                }else{
+                } else {
                     controls.update()
                 }
+
                 renderer.render(scene,camera)
                 }
 
-                return() =>{
+                return() => {
                     console.log('unmount')
                     cancelAnimationFrame(req)
                     renderer.dispose()
                 }
             }
-        },[])
+        }, [])
 
         useEffect(() => {
             window.addEventListener('resize', handleWindowResize, false)
