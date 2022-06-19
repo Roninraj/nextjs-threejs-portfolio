@@ -19,17 +19,17 @@ return(
                         A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
                     </WorkGridItem>
                 </Section>
-                <Section delay={0.3}>
+                {/* <Section delay={0.3}>
                     <WorkGridItem id="samurai_montage" title="Valo Montage" thubnail={thumbHackaduck}>
                             A montage made from game - Valorant
                     </WorkGridItem>
-                </Section>
+                </Section> */}
             </SimpleGrid>
         </Box>
 
         <Divider/>
 
-        <Box>
+        <Box pt={4}>
             <Heading as="h3" fontSize={20} mb={4}>
                 Collaborations
             </Heading>
@@ -39,11 +39,11 @@ return(
                         A website for the event organised by <Link href="https://psyberduck.com/">Psyberduck</Link>
                     </WorkGridItem>
                 </Section>
-                <Section delay={0.3}>
+                {/* <Section delay={0.3}>
                     <WorkGridItem id="samurai_montage" title="Valo Montage" thubnail={thumbHackaduck}>
                             A montage made from game - Valorant
                     </WorkGridItem>
-                </Section>
+                </Section> */}
             </SimpleGrid>
 
         </Box> 

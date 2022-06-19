@@ -5,7 +5,7 @@ import Paragraph from "../components/paragraph"
 import Codebox from "../components/codebox";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
-import roninPic from "/public/roninraj.jpg"
+
 
 const Page = () => {
     return(
@@ -33,7 +33,7 @@ const Page = () => {
                     maxWidth="100px" 
                     display="inline-block" 
                     borderRadius="full" 
-                    src={roninPic}
+                    src={"/roninraj.jpg"}
                     // fallbackSrc="https://via.placeholder.com/150x150"
                     alt="Profile Image"/>
                 </Box>
