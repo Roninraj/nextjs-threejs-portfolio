@@ -1,9 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from "react"
-import { Box,  } from "@chakra-ui/react"
-import { render } from "react-dom"
-import { ObjectLoader } from "three"
 import { loadGLTFModel } from "../libs/model"
-import { animate } from "framer-motion"
 import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 import { FoxContainer, FoxSpinner } from "./voxel-fox-loader"
