@@ -9,12 +9,5 @@
         "@next/next/inline-script-id" : "off",
         "@next/next/link-passhref" : "off",
         "@next/next/no-img-element" : "off",
-        "no-unused-vars": [
-            "error",
-            {
-                "argsIgnorePattern": "^_",
-                "varsIgnorePattern": "^_"
-            }
-        ]
     }
 }
