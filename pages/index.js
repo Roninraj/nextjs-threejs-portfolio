@@ -1,15 +1,17 @@
 import {Box, Button, Container, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react"
 import NextLink from 'next/link'
+import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph"
 import Codebox from "../components/codebox";
+
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
 
 
 const Page = () => {
     return(
-        <>
+      <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')} p="2.5" mb={6} align="center">
                 Hello, I&apos;m a Final year student studying at BIT Mesra, Ranchi
@@ -90,7 +92,7 @@ const Page = () => {
                 </BioSection>
             </Section>
         </Container>
-        </>
+      </Layout>
     );
 };
 
