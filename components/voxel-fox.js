@@ -120,6 +120,7 @@ const VoxelFox = () => {
                 window.removeEventListener('resize', handleWindowResize, false)
             }
             }, [renderer, handleWindowResize])
+            
         return(
             <FoxContainer ref={refContainer}>{loading && <FoxSpinner/>}</FoxContainer>
         )
