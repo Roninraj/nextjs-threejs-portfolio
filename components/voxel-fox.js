@@ -74,9 +74,9 @@ const VoxelFox = () => {
             controls.target = target
             setControls(controls)
             
-            loadGLTFModel(scene, '/fly.glb', {
-                receiveShadow: false,
-                castShadow: false
+            loadGLTFModel(scene, '/smithy.glb', {
+                receiveShadow: true,
+                castShadow: true
             }).then(() => {
                 animate()
                 setLoading(false)

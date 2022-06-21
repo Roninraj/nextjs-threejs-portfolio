@@ -49,7 +49,7 @@ const Page = () => {
                     Gaming&apos;s got a second blood in me, especially when it&apos;s FPS. The recent work I did on was on Front-end for {''}
                     <NextLink href="/works/hackaduck2"><Link>Hack-a-Duck 2.0</Link></NextLink>. Currently, in Ranchi.
                     <br/>
-                    <Codebox><code>" Never ever lose yourself "</code></Codebox>
+                    <Codebox>" Never ever lose yourself "</Codebox>
                 </Paragraph>
 
                 <Box align="center" my={4}>
