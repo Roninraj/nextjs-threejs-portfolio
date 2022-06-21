@@ -1,4 +1,4 @@
-import { extendTheme,} from "@chakra-ui/react";
+import { extendTheme} from "@chakra-ui/react";
 //import chakraUiTheme from "@chakra-ui/theme";
 import {mode} from '@chakra-ui/theme-tools';
 
